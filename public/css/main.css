@@ -1,0 +1,189 @@
+/*-----------------------------slideshow css*---------------------------------*/
+.w3-animate-fading{animation:fading 10s infinite}@keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
+.w3-animate-opacity{animation:opac 0.8s}@keyframes opac{from{opacity:0} to{opacity:1}}
+.w3-animate-top{position:relative;animation:animatetop 0.4s}@keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1}}
+.w3-animate-left{position:relative;animation:animateleft 0.4s}@keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
+.w3-animate-right{position:relative;animation:animateright 0.4s}@keyframes animateright{from{right:-300px;opacity:0} to{right:0;opacity:1}}
+.w3-animate-bottom{position:relative;animation:animatebottom 0.4s}@keyframes animatebottom{from{bottom:-300px;opacity:0} to{bottom:0;opacity:1}}
+.w3-animate-zoom {animation:animatezoom 0.6s}@keyframes animatezoom{from{transform:scale(0)} to{transform:scale(1)}}
+.w3-animate-input{transition:width 0.4s ease-in-out}.w3-animate-input:focus{width:100%!important}
+
+
+* {
+    margin: 0 auto;
+    padding: 0;
+}
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    background-image: url("imgages/IMG_0003.JPG");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index:0;
+}
+
+body a {
+    text-decoration: none;
+}
+
+#website {
+    margin: 0 auto;
+    padding: 0;
+    max-width: 60%;
+    height: auto;
+    background-color: white;
+    z-index: 10;
+}
+
+h2 {
+    margin: 0px auto;
+    padding: 0px;
+    font-size: 25pt;
+    margin-top: 20px;
+}
+
+/*-------------------------nav------------------------*/
+
+#nav {
+    width: 100%;
+    height: auto;
+    color: black;
+    font-size: 40px;
+    position: relative
+}
+
+.navbar {
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    left: 0;
+    right: 0;
+    background-color: rgba(192, 192, 192, 0.2);
+    text-align: center;
+    z-index: 100;
+}
+
+.navbar a {
+    color: black;
+}
+
+.logo {
+    margin: 0;
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.name {
+    margin: 0;
+    padding-top: 43px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.logo img {
+    width: 250px;
+    height: auto;
+    margin: 0;
+}
+
+.logo h1 {
+    margin: 0;
+    padding: 0;
+    display: block;
+    font-size: 60px;
+}
+
+/*-------------------------container------------------------*/
+
+#container {
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    height: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+#photogallery {
+    padding-top: 20px;
+    width: 95%;
+}
+
+#photogallery img {
+    max-width: 90%;
+}
+
+/*-------------------------info------------------------*/
+
+#infoh2 {
+    margin-top: 30px;
+}
+.infotext {
+    font-size: 18px;
+    margin: 0px auto;
+    padding: 0px;
+    width: 85%;
+    text-align: left;
+}
+
+.infotextul{
+    width: 90%;
+    padding: 15px 0px;
+}
+
+.infotextp {
+    text-align: center;
+}
+
+.infotext_discount {
+    padding: 15px 0px;
+}
+
+/*-------------------------footer------------------------*/
+
+#footer {
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    padding-bottom: 20px;
+}
+
+#footer a {
+    color: blue;
+}
+
+.opentimes {
+    display: inline-flex;
+}
+
+.days {
+
+}
+
+.times {
+    padding-left: 10px;
+}
+
+#contactp {
+    margin-top: 4px;
+}
+
+.tel {
+    margin-top: 7px;
+}
+
+.email {
+    margin-top: 7px;
+}
+
+.facebookpage {
+    margin-top: 7px;
+}

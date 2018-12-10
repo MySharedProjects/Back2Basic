@@ -1,0 +1,70 @@
+@media all and ( max-width: 1760px ) {
+    #website {
+        max-width: 80%;
+    }
+}
+
+@media all and ( max-width: 1264px ) {
+    #website {
+        max-width: 90%;
+    }
+}
+
+@media all and ( max-width: 1106px ) {
+    .logo img:nth-of-type(2) {
+        display: none;
+    }
+}
+
+@media all and ( max-width: 930px ) {
+    #website {
+        width: 100%;
+    }
+
+    body {
+        background-image: none;
+        width: 100%;
+    }
+
+    .logo {
+        text-align: center;
+        margin: auto;
+        width: 90%;
+    }
+
+    .logo img {
+        width: auto;
+        height: 168px;
+        padding-top: 43px;
+    }
+
+    .name {
+        margin-right: 0px;
+    }
+
+    #info {
+        width: 100%;
+    }
+}
+
+@media all and ( max-width: 733px ) {
+    .logo h1{
+        font-size: 50px;
+    }
+
+    .name {
+        margin-left: 20px;
+    }
+
+    .logo img {
+        padding-top: 20px;
+    }
+}
+
+@media all and ( max-width: 707px ) {
+    .logo {
+        padding-top: 100px;
+    }
+
+
+}
