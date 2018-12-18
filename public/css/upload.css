@@ -1,0 +1,8 @@
+.container {
+    width: 1200px!important;
+    text-align: center;
+}
+.container img{
+    margin: 0 auto;
+    max-width: 100%;
+}
