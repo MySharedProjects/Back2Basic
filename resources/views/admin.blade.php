@@ -20,6 +20,14 @@
 </head>
 <body>
 <div class="container">
+    <form action="{{ route('UploadImage') }}" method="POST" enctype="multipart/form-data">
+        @csrf
+        <input type="text" name="title">
+        <input type="text" name="slug">
+        <input type="file" name="featured_image">
+        <input type="textarea" name="body">
+        <button type="submit" class="btn btn-success">Upload</button>
+    </form>
 
     <div class="panel panel-primary">
 
@@ -75,10 +83,6 @@
 
                     </div>
 
-                </div>
-
-                <div class="textbar">
-                    <textarea name="comment"></textarea>
                 </div>
 
             </form>

@@ -3,7 +3,15 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Intervention\Image\Facades\Image;
+use App\Http\Controllers\Controller;
+
+use App\Http\Requests;
+use App\Post;
+use App\Tag;
+use App\Category;
+use App\Session;
+use App\Purifier;
+use App\Body;
 
 class MainController extends Controller
 {
@@ -33,7 +41,7 @@ class MainController extends Controller
 
     {
 
-        request()->validate([
+        /*request()->validate([
 
             'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
 
@@ -43,12 +51,12 @@ class MainController extends Controller
 
         request()->image->move(public_path('images/UploadImages'), $imageName);
 
-        return view('admin')->with('success','You have successfully upload image.')->with('image',$imageName);
+        return view('admin')->with('success','You have successfully upload image.')->with('image',$imageName);*/
 
 
 
 
-        /*$this->validate($request, array(
+        $this->validate($request, array(
             'title' => 'required|max:255',
             'slug' => 'required|alpha_dash|min:5|max:255|unique:posts,slug',
             'category_id' => 'required|integer',
@@ -73,18 +81,17 @@ class MainController extends Controller
 
         Session::flash('succes', 'The images has been uploaded');
 
-        return redirect()->route('admin', $post->id);*/
+        return redirect()->route('admin', $post->id);
     }
 
     public function galleryUploads()
     {
 
-        $dir = "/public/images/*.jpg";
+        $dir = "/public/images";
 
-        $images = glob( $dir );
+        $images = glob( $dir . "/*jpg" );
 
         return view("photoGallery")->with('images', $images);
     }
-
 
 }

@@ -15,19 +15,22 @@
 
         <!-- Styles -->
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="{{asset('css/normalize.css')}}">
+        <link rel="stylesheet" type="text/css" href="{{asset('css/main.css')}}">
+        <link rel="stylesheet" type="text/css" href="{{asset('css/responsive.css')}}">
         <title>Document</title>
     </head>
     <body>
         <div class="header">
-
+            <div class="navbar">
+                <a href="{{ url('/') }}">Home</a> -
+                <a href="{{ url('/galleryUploads') }}">Foto Gallerij</a>
+            </div>
         </div>
         <div class="container">
-
                 @foreach($images as $image)
-                    <img src="{{ $image->path }}" alt =""/>
+                    echo $image;
                 @endforeach
-
-
         </div>
         <div class="footer">
 

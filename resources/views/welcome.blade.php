@@ -41,7 +41,7 @@
                 <div id="nav">
                     <div class="navbar">
                         <a href="#website">Home</a> -
-                        <a href="#photogallery">Foto Gallerij</a> -
+                        <a href="{{ url('/galleryUploads') }}">Foto Gallerij</a> -
                         <a href="#info">Info</a> -
                         <a href="#footer">Contact</a>
                     </div>
