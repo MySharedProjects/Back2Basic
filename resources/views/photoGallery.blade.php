@@ -23,9 +23,11 @@
         </div>
         <div class="container">
 
-            @foreach( $images as $image ):
-            echo $image;
-            @endforeach
+                @foreach($images as $image)
+                    <img src="{{ $image->path }}" alt =""/>
+                @endforeach
+
+
         </div>
         <div class="footer">
 

@@ -46,6 +46,34 @@ class MainController extends Controller
         return view('admin')->with('success','You have successfully upload image.')->with('image',$imageName);
 
 
+
+
+        /*$this->validate($request, array(
+            'title' => 'required|max:255',
+            'slug' => 'required|alpha_dash|min:5|max:255|unique:posts,slug',
+            'category_id' => 'required|integer',
+            'body' => 'required'
+        ));
+
+        $post = new Post;
+
+        $post->title = $request->title;
+        $post->slug = $request->slug;
+        $post->category_id = $request->category_id;
+        $post->body = Purifier::clean($request-body);
+
+        if ($request->hasFile('featurd_image')) {
+        $image = $request->file('featured_image');
+        $filename = time(). '.' . $image->getClientOriginalExtension();
+        }
+
+        $post->save();
+
+        $post->tags()->sync($request->tags, false);
+
+        Session::flash('succes', 'The images has been uploaded');
+
+        return redirect()->route('admin', $post->id);*/
     }
 
     public function galleryUploads()

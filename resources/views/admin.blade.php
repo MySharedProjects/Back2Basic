@@ -76,7 +76,7 @@
                     </div>
 
                 </div>
-                
+
                 <div class="textbar">
                     <textarea name="comment"></textarea>
                 </div>
